@@ -57,9 +57,10 @@ public static class HtsMapper
                 Latitude = Get<decimal?>(row, "latitude"),
                 Longitude = Get<decimal?>(row, "longitude"),
 
-                // ── Who entered the test (AHNi spoke sites) ─────────────────────
-                CreatedBy = Get<string>(row, "createdby"),
-                EnteredAt = Get<string>(row, "enteredat"),
+                // ── Spoke site (AHNi) ───────────────────────────────────────────
+                SpokeSiteId = Get<string>(row, "spokesiteid"),
+                SpokeSiteName = Get<string>(row, "spokesitename"),
+                SpokeSiteCheck = Get<string>(row, "spokesitecheck"),
             });
         }
 

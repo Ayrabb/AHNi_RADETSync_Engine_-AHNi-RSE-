@@ -49,10 +49,12 @@ public class Hts
     public decimal? Latitude { get; set; }
     public decimal? Longitude { get; set; }
 
-    // ── Who entered the test (AHNi spoke sites) ───────────────────────────────
-    // LAMIS Lite tablets record a spoke site's tests under the hub. BayCentral places
-    // each test at its site from the site app's check-ins, matched by this username
-    // and the visit date. Blank when the facility's LAMISPlus does not record it.
-    public string? CreatedBy { get; set; }
-    public string? EnteredAt { get; set; }
+    // ── Spoke site (AHNi) ─────────────────────────────────────────────────────
+    // LAMIS Lite records a spoke site's tests under the hub. Staff end the client code
+    // with the spoke's ID (FC/SH/2026/10/037/AGH02); hts.sql reads it and checks it
+    // against the hub's spokes: SpokeSiteCheck is ok, unknown spoke ID, missing spoke ID
+    // (testing setting is a spoke but the code has none) or blank for a hub record.
+    public string? SpokeSiteId { get; set; }
+    public string? SpokeSiteName { get; set; }
+    public string? SpokeSiteCheck { get; set; }
 }
