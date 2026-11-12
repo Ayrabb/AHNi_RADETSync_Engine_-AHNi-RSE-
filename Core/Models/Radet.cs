@@ -99,6 +99,12 @@ namespace AHNiRSE.Core.Models
         public DateTime? DateBiometricsRecapture { get; set; }
         public int? FingersRecaptured { get; set; }
         public string? CaseManager { get; set; }
+
+        // Spoke site (AHNi): from the spoke ID at the end of the client code of the client's
+        // latest HIV test that carries one (where they were tested). See Hts.SpokeSiteCheck.
+        public string? SpokeSiteId { get; set; }
+        public string? SpokeSiteName { get; set; }
+        public string? SpokeSiteCheck { get; set; }
     }
 }
 

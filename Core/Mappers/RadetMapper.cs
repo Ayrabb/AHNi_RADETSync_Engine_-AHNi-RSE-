@@ -131,7 +131,10 @@ public static class RadetMapper
                 DateBiometricsRecapture = Get<DateTime?>(row, "datebiometricsrecaptured"),
                 FingersRecaptured = Get<int?>(row, "numberoffingersrecaptured"),
 
-                CaseManager = Get<string>(row, "casemanager")
+                CaseManager = Get<string>(row, "casemanager"),
+                SpokeSiteId = Get<string>(row, "spokesiteid"),
+                SpokeSiteName = Get<string>(row, "spokesitename"),
+                SpokeSiteCheck = Get<string>(row, "spokesitecheck")
             };
 
             result.Add(item);

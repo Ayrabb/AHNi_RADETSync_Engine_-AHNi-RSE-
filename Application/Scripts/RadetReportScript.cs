@@ -136,6 +136,9 @@ public class RadetReportScript(
             ["DateBiometricsRecapture"] = "Date Biometrics Recapture (yyyy-mm-dd)",
             ["FingersRecaptured"] = "Number of Fingers Recaptured",
             ["CaseManager"] = "Case Manager",
+            ["SpokeSiteId"] = "Spoke Site ID",
+            ["SpokeSiteName"] = "Spoke Site Name",
+            ["SpokeSiteCheck"] = "Spoke Site Check",
         };
 
     // ── PMTCT HTS header map (16 columns — matches pmtct_hts_report.sql final SELECT) ──────────────────
